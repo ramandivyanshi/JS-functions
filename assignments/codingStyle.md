@@ -22,5 +22,16 @@ else
 
 ## Solution
 ```js
-// your code goes here
+function pow(x,n){
+let power=1;
+for(let i=0;i<n;i++){
+power*=x;
+}
+return power;
+}
+let x=prompt("x?",''), n=prompt("n?",'');
+if (n<=0)
+  alert(`Power ${n} is not supported, please enter an integer number greater than zero`);
+else
+  alert(pow(x,n));
 ```
