@@ -6,32 +6,36 @@
 // 5. Function Invocation
 
 // Example Start
-/**
- * Converts a number a string.
- * @param {number} n
- * @return {string} the number as a string
- */
+/*Converts a number a string.
+param {number} n
+return {string} the number as a string*/
 
-//Function Decleration
-function convertToString(n) {
-  return String(n);
+
+1. //Function Decleration
+function convert(num) {
+    num = prompt("Enter any number");
+    let str = String(num);
+    return str;
 }
+convert();
 
-// Function Expression
+2. // Function Expression
 let convertToString1 = function(n) {
-  return String(n);
+    return String(n);
 };
+let number = prompt("Enter a number");
+String(number);
 
 // Arrow Function
 let convertToString = n => String(n);
 
-// Arrow Function With Curly Bracket
+3. // Arrow Function With Curly Bracket
 
 let convertToString = n => {
-  return String(n);
+    return String(n);
 };
 
-// Function Invocation
+4. // Function Invocation
 
 convertToString(21); // "21"
 
